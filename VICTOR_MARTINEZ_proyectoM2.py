@@ -16,6 +16,8 @@ except ValueError:
 try:#inicio de try por detectar cualquier mal entrada de teclado 
      x=float(input("POR FAVOR INGRESE LA COORDENADA X: "))
      y=float(input("POR FAVOR INGRESE LA COORDENADA Y: "))
+     if x==0 and y==0:
+       print("la coordenada es el centro 0,0")
      if x>=1 and y>=1: #condicional cuadrante 1 
         print("la coordenada ", x,",",y," se encuentra en el cuadrante 1")
      elif x<= -1 and y>=1: #condicional cuadrante 2
